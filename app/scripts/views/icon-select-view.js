@@ -101,8 +101,9 @@ class IconSelectView extends View {
         }
         if (useService) {
             return (
-                'https://services.keeweb.info/favicon/' +
-                url.replace(/^.*:\/+/, '').replace(/\/.*/, '')
+                'https://www.google.com/s2/favicons?domain=' +
+                url.replace(/^.*:\/+/, '').replace(/\/.*/, '') +
+                '&sz=32'
             );
         }
         return url;
